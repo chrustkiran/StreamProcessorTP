@@ -14,8 +14,8 @@ void StreamProcessor::initialize(int T_NUM) {
      StreamProcessor::processor = new Processor();
      StreamProcessor::window = new Window();
      StreamProcessor::outputEmitter = new OutputEmitter;
-    window->setCondVariable(5);
-    inputHandler->feedData(this->buffer);
+     window->setCondVariable(5);
+     inputHandler->feedData(buffer);
 
     this->threadPool->initializeThreads(T_NUM);
 }

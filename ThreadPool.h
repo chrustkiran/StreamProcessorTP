@@ -13,8 +13,7 @@
 class ThreadPool {
 
 private:
-    static void *processEvent(void *args);
-    static Buffer<Data> *buffer;
+    void processEvent();
     mutex m;
 
 

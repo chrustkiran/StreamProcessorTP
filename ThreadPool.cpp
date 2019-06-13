@@ -6,7 +6,7 @@
 #include "StreamProcessor.h"
 
 
-void *ThreadPool::processEvent(void *args) {
+void ThreadPool::processEvent() {
     StreamProcessor::window->checkInputEvent();
     StreamProcessor::processor->process(StreamProcessor::buffer->pop());
     StreamProcessor::window->checkOutputEvent();
@@ -15,9 +15,11 @@ void *ThreadPool::processEvent(void *args) {
 
 
 void ThreadPool::initializeThreads(int T_NUM) {
-    pthread_t pthreads[T_NUM];
-
+    thread pthreads[T_NUM];
     for (int i = 0; i < T_NUM; i++) {
-        pthread_create(&pthreads[i], NULL, &ThreadPool::processEvent, NULL);
+        thread(&ThreadPool::processEvent,this);
+    }
+    for (int i = 0; i < T_NUM; ++i) {
+        pthreads[i].join();
     }
 }
