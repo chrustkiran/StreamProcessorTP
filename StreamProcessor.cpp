@@ -12,10 +12,9 @@
 void StreamProcessor::initialize(int T_NUM) {
      StreamProcessor::buffer = new Buffer<Data>();
      StreamProcessor::processor = new Processor();
-     StreamProcessor::window = new Window();
      StreamProcessor::outputEmitter = new OutputEmitter;
-     window->setCondVariable(5);
+     StreamProcessor::window = new Window;
+     window->setCondVariable(2);
      inputHandler->feedData(buffer);
-
     this->threadPool->initializeThreads(T_NUM);
 }

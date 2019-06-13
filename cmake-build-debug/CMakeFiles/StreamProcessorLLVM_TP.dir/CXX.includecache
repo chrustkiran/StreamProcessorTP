@@ -38,14 +38,6 @@ Data.h
 Buffer.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.h
 
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/OutputEmitter.cpp
-OutputEmitter.h
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/OutputEmitter.h
-StreamProcessor.h
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
-iostream
--
-
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/OutputEmitter.h
 
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Processor.h
@@ -74,12 +66,6 @@ InputHandler.h
 OutputEmitter.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/OutputEmitter.h
 
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ThreadPool.cpp
-ThreadPool.h
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ThreadPool.h
-StreamProcessor.h
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
-
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ThreadPool.h
 Buffer.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.h
@@ -87,12 +73,6 @@ Data.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Data.h
 thread
 -
-
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.cpp
-Window.h
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
-StreamProcessor.h
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
 
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
 condition_variable
@@ -103,10 +83,4 @@ mutex
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/functions/Sum.h
 mutex
 -
-
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/main.cpp
-iostream
--
-StreamProcessor.h
-/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
 

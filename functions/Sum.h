@@ -11,13 +11,14 @@ using namespace std;
 class Sum {
 
 public:
-    static int SUM;
+
     void calculateSum(int data);
     void reset();
     int getOutput();
 
 private:
     mutex m;
+    int total=0;
 };
 
 

@@ -7,16 +7,20 @@
 
 bool Window::inputBarrier = true;
 
-void Window::checkInputEvent() {
-    //conditional variable
 
+
+void Window::checkInputEvent() {
     unique_lock<mutex> m_lock(m_mutex);
-    if(this->inputCounter < this->condVariable){
-        inputBarrier = false;
+    while(this->inputCounter >= this->condVariable){
+        m_condition.wait(m_lock);
     }
-    while (inputBarrier){ m_condition.wait(m_lock);}
 
     this->inputCounter++;
+
+    //implemented for time window
+   /* if(inputCounter == condVariable){
+        testVar = inputCounter;
+    }*/
     m_lock.unlock();
 }
 
@@ -25,20 +29,20 @@ int Window::getCondVariable() const {
 }
 
 void Window::setCondVariable(int condVariable) {
-    Window::condVariable = condVariable;
+    this->condVariable = condVariable;
 }
 
 
 void Window::checkOutputEvent() {
-    m_mutex.lock();
+    unique_lock<mutex> m_lock_out(m_mutex);
     this->outputCounter++;
-    if(outputCounter == this->inputCounter){
-        //StreamProcessor::outputEmitter->canEmit = true;
+    if(this->outputCounter == this->condVariable){
         StreamProcessor::outputEmitter->emitData();
         StreamProcessor::processor->reset();
-        inputBarrier = false;
-        m_condition.notify_all();
+        this->inputCounter = 0;
+        this->outputCounter = 0;
+        this->m_condition.notify_all();
     }
-    m_mutex.unlock();
+    m_lock_out.unlock();
 
 }

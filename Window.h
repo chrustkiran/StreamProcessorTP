@@ -13,9 +13,10 @@ class Window {
 
 
 private:
-    int condVariable;   //length or duration
+    int condVariable = 0;   //length or duration
     int inputCounter = 0;
     int outputCounter = 0;
+    int testVar = 0;
     condition_variable m_condition;
     mutex m_mutex;
     static bool inputBarrier;
@@ -27,6 +28,7 @@ public:
     int getCondVariable() const;
 
     void setCondVariable(int condVariable);
+
 
 };
 

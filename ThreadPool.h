@@ -14,7 +14,6 @@ class ThreadPool {
 
 private:
     void processEvent();
-    mutex m;
 
 
 public:

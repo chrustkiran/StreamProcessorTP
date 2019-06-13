@@ -11,11 +11,12 @@
 
 class Processor {
 private:
-    Sum *sum;
+    Sum sum;
 public:
     void process(Data event);
     int getOutputs();
     void reset();
+    Processor();
 };
 
 

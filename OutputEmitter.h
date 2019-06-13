@@ -9,7 +9,6 @@
 class OutputEmitter {
 
 public:
-    bool canEmit = false;
     void emitData();
 };
 

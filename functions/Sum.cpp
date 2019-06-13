@@ -4,18 +4,17 @@
 
 #include "Sum.h"
 
-int Sum::SUM = 0;
 
 void Sum::calculateSum(int data) {
-    m.lock();
-    SUM = SUM + data;
-    m.unlock();
+    unique_lock<mutex> m_lock(m);
+    this->total = this->total + data;
+    m_lock.unlock();
 }
 
 void Sum::reset() {
-    Sum::SUM = 0;
+    this->total = 0;
 }
 
 int Sum::getOutput() {
-    return SUM;
+    return this->total;
 }

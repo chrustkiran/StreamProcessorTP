@@ -6,13 +6,17 @@
 #include <iostream>
 
 void Processor::process(Data event) {
-    sum->calculateSum(event.getWeight());
+    sum.calculateSum(event.getWeight());
 }
 
 int Processor::getOutputs() {
-    return sum->getOutput();
+    return sum.getOutput();
 }
 
 void Processor::reset() {
-    sum->reset();
+    sum.reset();
+}
+
+Processor::Processor() {
+    //this->sum = new Sum();
 }
