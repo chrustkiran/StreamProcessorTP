@@ -9,11 +9,8 @@
 
 
 void ThreadPool::processEvent() {
-    while(!StreamProcessor::buffer->isEmpty()) {
-        //StreamProcessor::window->checkInputEvent();
+    while(true){ // it should be a flag but definitely should not check for buffer is empty or not!!!!
         StreamProcessor::processor->process(StreamProcessor::buffer->pop());
-        //StreamProcessor::window->checkOutputEvent();
-       // StreamProcessor::outputEmitter->emitData();
     }
 }
 

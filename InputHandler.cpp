@@ -7,10 +7,10 @@
 
  void InputHandler::feedData(Buffer<Data> *buffer) {
 
-    for(int i=0;i<10000;i++){
+    for(int i=0;i<100000;i++){
         Data data;
         data.setWeight(i);
-        data.setIijTime(getCurrentTime());
+        data.setIijTime(std::chrono::high_resolution_clock::now());
         buffer->push(data);
     }
 }

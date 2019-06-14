@@ -5,6 +5,6 @@ int main() {
 
 
     StreamProcessor streamProcessor;
-    streamProcessor.initialize(1);
+    streamProcessor.initialize(3);
     return 0;
 }

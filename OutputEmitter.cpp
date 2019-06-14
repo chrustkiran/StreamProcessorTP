@@ -9,7 +9,6 @@
 #include <iostream>
 
  void OutputEmitter::emitData(Data output) {
-   //cout << output.getWeight()<< endl;
-   Benchmark::calcTotalTime(getCurrentTime(),output);
+   Benchmark::calcLatency((std::chrono::high_resolution_clock::now() - output.getIijTime()).count());
 
 }
