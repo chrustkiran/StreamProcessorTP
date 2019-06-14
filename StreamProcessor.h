@@ -21,11 +21,12 @@ public:
     static Processor *processor;
     static Window *window;
     void initialize(int T_NUM);
-    static OutputEmitter *outputEmitter;
-
+  /*  static OutputEmitter *outputEmitter;
+    static InputHandler *inputHandler;
+*/
 private:
     ThreadPool *threadPool;
-    InputHandler *inputHandler;
+
 
 };
 

@@ -14,6 +14,7 @@ class ThreadPool {
 
 private:
     void processEvent();
+    void inputFeed();
 
 
 public:

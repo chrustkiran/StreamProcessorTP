@@ -11,7 +11,7 @@
 
 class InputHandler {
 public:
-    void feedData(Buffer<Data> *buffer);
+    static void feedData(Buffer<Data> *buffer);
 };
 
 

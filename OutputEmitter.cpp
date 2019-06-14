@@ -4,8 +4,12 @@
 
 #include "OutputEmitter.h"
 #include "StreamProcessor.h"
+#include "Benchmark.h"
+#include "common.h"
 #include <iostream>
 
-void OutputEmitter::emitData() {
-   cout << StreamProcessor::processor->getOutputs() << endl;
+ void OutputEmitter::emitData(Data output) {
+   //cout << output.getWeight()<< endl;
+   Benchmark::calcTotalTime(getCurrentTime(),output);
+
 }

@@ -3,14 +3,14 @@
 //
 
 #include "InputHandler.h"
+#include "common.h"
 
+ void InputHandler::feedData(Buffer<Data> *buffer) {
 
-void InputHandler::feedData(Buffer<Data> *buffer) {
-
-    for(int i=10;i<100;i++){
+    for(int i=0;i<10000;i++){
         Data data;
         data.setWeight(i);
-        data.setTemperature(100+i);
+        data.setIijTime(getCurrentTime());
         buffer->push(data);
     }
 }

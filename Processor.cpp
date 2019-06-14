@@ -3,14 +3,19 @@
 //
 
 #include "Processor.h"
+#include "StreamProcessor.h"
 #include <iostream>
 
 void Processor::process(Data event) {
-    sum.calculateSum(event.getWeight());
+    //sum.calculateSum(event.getWeight());
+    //this->getOutputs(event);
+    OutputEmitter::emitData(event);
 }
 
-int Processor::getOutputs() {
-    return sum.getOutput();
+Data Processor::getOutputs(Data data) {
+    //return sum.getOutput();
+
+    return data;
 }
 
 void Processor::reset() {

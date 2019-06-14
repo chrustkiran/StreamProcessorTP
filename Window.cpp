@@ -37,7 +37,7 @@ void Window::checkOutputEvent() {
     unique_lock<mutex> m_lock_out(m_mutex);
     this->outputCounter++;
     if(this->outputCounter == this->condVariable){
-        StreamProcessor::outputEmitter->emitData();
+//        StreamProcessor::outputEmitter->emitData();
         StreamProcessor::processor->reset();
         this->inputCounter = 0;
         this->outputCounter = 0;

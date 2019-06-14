@@ -6,10 +6,12 @@
 #define STREAMPROCESSORLLVM_TP_OUTPUTEMITTER_H
 
 
+#include "Data.h"
+
 class OutputEmitter {
 
 public:
-    void emitData();
+   static void emitData(Data output);
 };
 
 

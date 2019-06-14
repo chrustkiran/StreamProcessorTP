@@ -59,6 +59,7 @@ public:
     T front();
     T pop();
     void push(T const&);
+    bool isEmpty();
 };
 
 template <class T>
@@ -85,6 +86,12 @@ T Buffer<T>::front(){
     T value = bufferQueue->front();
     locker.unlock();
     return value;
+}
+
+template <class T>
+bool Buffer<T>::isEmpty(){
+    unique_lock<mutex> locker(mutexForPopPushLock);
+    return bufferQueue->empty();
 }
 
 template <class T>

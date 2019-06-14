@@ -123,6 +123,33 @@ StreamProcessorLLVM_TP/fast:
 	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/build
 .PHONY : StreamProcessorLLVM_TP/fast
 
+Benchmark.o: Benchmark.cpp.o
+
+.PHONY : Benchmark.o
+
+# target to build an object file
+Benchmark.cpp.o:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o
+.PHONY : Benchmark.cpp.o
+
+Benchmark.i: Benchmark.cpp.i
+
+.PHONY : Benchmark.i
+
+# target to preprocess a source file
+Benchmark.cpp.i:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.i
+.PHONY : Benchmark.cpp.i
+
+Benchmark.s: Benchmark.cpp.s
+
+.PHONY : Benchmark.s
+
+# target to generate assembly for a file
+Benchmark.cpp.s:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.s
+.PHONY : Benchmark.cpp.s
+
 Buffer.o: Buffer.cpp.o
 
 .PHONY : Buffer.o
@@ -402,6 +429,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... StreamProcessorLLVM_TP"
 	@echo "... edit_cache"
+	@echo "... Benchmark.o"
+	@echo "... Benchmark.i"
+	@echo "... Benchmark.s"
 	@echo "... Buffer.o"
 	@echo "... Buffer.i"
 	@echo "... Buffer.s"

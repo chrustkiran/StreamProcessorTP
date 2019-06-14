@@ -3,7 +3,8 @@
 
 int main() {
 
+
     StreamProcessor streamProcessor;
-    streamProcessor.initialize(4);
+    streamProcessor.initialize(1);
     return 0;
 }
