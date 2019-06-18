@@ -3,18 +3,17 @@
 //
 
 #include "StreamProcessor.h"
+#include "TimeWindow.h"
+#include "LengthWindow.h"
 
- Buffer<Data> *StreamProcessor::buffer = NULL;
+Buffer<Data> *StreamProcessor::buffer = NULL;
  Processor *StreamProcessor::processor = NULL;
  Window *StreamProcessor::window = NULL;
- OutputEmitter *StreamProcessor::outputEmitter = NULL;
 
 void StreamProcessor::initialize(int T_NUM) {
      StreamProcessor::buffer = new Buffer<Data>();
      StreamProcessor::processor = new Processor();
-     StreamProcessor::outputEmitter = new OutputEmitter;
-     StreamProcessor::window = new Window;
-     window->setCondVariable(2);
-     inputHandler->feedData(buffer);
+     StreamProcessor::window = new LengthWindow;
+     window->setCondVariable(5);
     this->threadPool->initializeThreads(T_NUM);
 }

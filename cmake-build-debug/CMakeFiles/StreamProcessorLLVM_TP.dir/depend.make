@@ -12,6 +12,10 @@ CMakeFiles/StreamProcessorLLVM_TP.dir/InputHandler.cpp.o: ../Data.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/InputHandler.cpp.o: ../InputHandler.cpp
 CMakeFiles/StreamProcessorLLVM_TP.dir/InputHandler.cpp.o: ../InputHandler.h
 
+CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o: ../LengthWindow.cpp
+CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o: ../LengthWindow.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o: ../Window.h
+
 CMakeFiles/StreamProcessorLLVM_TP.dir/OutputEmitter.cpp.o: ../Buffer.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/OutputEmitter.cpp.o: ../Data.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/OutputEmitter.cpp.o: ../InputHandler.h
@@ -31,11 +35,13 @@ CMakeFiles/StreamProcessorLLVM_TP.dir/Processor.cpp.o: ../functions/Sum.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../Buffer.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../Data.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../InputHandler.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../LengthWindow.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../OutputEmitter.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../Processor.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../StreamProcessor.cpp
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../StreamProcessor.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../ThreadPool.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../TimeWindow.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../Window.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o: ../functions/Sum.h
 
@@ -47,8 +53,15 @@ CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../Processor.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../StreamProcessor.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../ThreadPool.cpp
 CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../ThreadPool.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../TimeWindow.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../Window.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../common.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o: ../functions/Sum.h
+
+CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o: ../TimeWindow.cpp
+CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o: ../TimeWindow.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o: ../Window.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o: ../common.h
 
 CMakeFiles/StreamProcessorLLVM_TP.dir/Window.cpp.o: ../Buffer.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/Window.cpp.o: ../Data.h

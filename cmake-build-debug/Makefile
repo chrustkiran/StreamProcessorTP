@@ -204,6 +204,33 @@ InputHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/InputHandler.cpp.s
 .PHONY : InputHandler.cpp.s
 
+LengthWindow.o: LengthWindow.cpp.o
+
+.PHONY : LengthWindow.o
+
+# target to build an object file
+LengthWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o
+.PHONY : LengthWindow.cpp.o
+
+LengthWindow.i: LengthWindow.cpp.i
+
+.PHONY : LengthWindow.i
+
+# target to preprocess a source file
+LengthWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.i
+.PHONY : LengthWindow.cpp.i
+
+LengthWindow.s: LengthWindow.cpp.s
+
+.PHONY : LengthWindow.s
+
+# target to generate assembly for a file
+LengthWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.s
+.PHONY : LengthWindow.cpp.s
+
 OutputEmitter.o: OutputEmitter.cpp.o
 
 .PHONY : OutputEmitter.o
@@ -312,6 +339,33 @@ ThreadPool.cpp.s:
 	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.s
 .PHONY : ThreadPool.cpp.s
 
+TimeWindow.o: TimeWindow.cpp.o
+
+.PHONY : TimeWindow.o
+
+# target to build an object file
+TimeWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o
+.PHONY : TimeWindow.cpp.o
+
+TimeWindow.i: TimeWindow.cpp.i
+
+.PHONY : TimeWindow.i
+
+# target to preprocess a source file
+TimeWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.i
+.PHONY : TimeWindow.cpp.i
+
+TimeWindow.s: TimeWindow.cpp.s
+
+.PHONY : TimeWindow.s
+
+# target to generate assembly for a file
+TimeWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.s
+.PHONY : TimeWindow.cpp.s
+
 Window.o: Window.cpp.o
 
 .PHONY : Window.o
@@ -411,6 +465,9 @@ help:
 	@echo "... InputHandler.o"
 	@echo "... InputHandler.i"
 	@echo "... InputHandler.s"
+	@echo "... LengthWindow.o"
+	@echo "... LengthWindow.i"
+	@echo "... LengthWindow.s"
 	@echo "... OutputEmitter.o"
 	@echo "... OutputEmitter.i"
 	@echo "... OutputEmitter.s"
@@ -423,6 +480,9 @@ help:
 	@echo "... ThreadPool.o"
 	@echo "... ThreadPool.i"
 	@echo "... ThreadPool.s"
+	@echo "... TimeWindow.o"
+	@echo "... TimeWindow.i"
+	@echo "... TimeWindow.s"
 	@echo "... Window.o"
 	@echo "... Window.i"
 	@echo "... Window.s"

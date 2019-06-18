@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/StreamProcessorLLVM_TP.dir/InputHandler.cpp.o"
   "CMakeFiles/StreamProcessorLLVM_TP.dir/functions/Sum.cpp.o"
   "CMakeFiles/StreamProcessorLLVM_TP.dir/OutputEmitter.cpp.o"
+  "CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o"
+  "CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o"
   "StreamProcessorLLVM_TP.pdb"
   "StreamProcessorLLVM_TP"
 )

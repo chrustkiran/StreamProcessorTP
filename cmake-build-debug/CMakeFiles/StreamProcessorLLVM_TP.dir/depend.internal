@@ -12,6 +12,10 @@ CMakeFiles/StreamProcessorLLVM_TP.dir/InputHandler.cpp.o
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Data.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/InputHandler.cpp
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/InputHandler.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/LengthWindow.cpp
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/LengthWindow.h
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/OutputEmitter.cpp.o
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Data.h
@@ -32,11 +36,13 @@ CMakeFiles/StreamProcessorLLVM_TP.dir/StreamProcessor.cpp.o
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Data.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/InputHandler.h
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/LengthWindow.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/OutputEmitter.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Processor.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.cpp
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ThreadPool.h
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/functions/Sum.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o
@@ -48,8 +54,15 @@ CMakeFiles/StreamProcessorLLVM_TP.dir/ThreadPool.cpp.o
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ThreadPool.cpp
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ThreadPool.h
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/common.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/functions/Sum.h
+CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.cpp
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.h
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
+ /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/common.h
 CMakeFiles/StreamProcessorLLVM_TP.dir/Window.cpp.o
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.h
  /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Data.h

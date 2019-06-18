@@ -38,6 +38,10 @@ Data.h
 Buffer.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.h
 
+/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/LengthWindow.h
+Window.h
+/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
+
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/OutputEmitter.h
 
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Processor.h
@@ -49,6 +53,10 @@ functions/Sum.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.cpp
 StreamProcessor.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
+TimeWindow.h
+/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.h
+LengthWindow.h
+/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/LengthWindow.h
 
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/StreamProcessor.h
 Buffer.h
@@ -73,6 +81,10 @@ Data.h
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Data.h
 thread
 -
+
+/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.h
+Window.h
+/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
 
 /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h
 condition_variable

@@ -102,6 +102,12 @@
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/InputHandler.h">
 			<Option target="StreamProcessorLLVM_TP"/>
 		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/LengthWindow.cpp">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/LengthWindow.h">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/OutputEmitter.cpp">
 			<Option target="StreamProcessorLLVM_TP"/>
 		</Unit>
@@ -126,10 +132,19 @@
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ThreadPool.h">
 			<Option target="StreamProcessorLLVM_TP"/>
 		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.cpp">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.h">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.cpp">
 			<Option target="StreamProcessorLLVM_TP"/>
 		</Unit>
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Window.h">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/common.h">
 			<Option target="StreamProcessorLLVM_TP"/>
 		</Unit>
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/functions/Sum.cpp">

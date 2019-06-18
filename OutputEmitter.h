@@ -9,7 +9,7 @@
 class OutputEmitter {
 
 public:
-    void emitData();
+    static void emitData();
 };
 
 

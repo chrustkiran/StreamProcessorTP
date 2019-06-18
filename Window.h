@@ -9,25 +9,26 @@
 #include <mutex>
 
 using namespace std;
+
 class Window {
 
 
-private:
-    int condVariable = 0;   //length or duration
+protected:
+    long condVariable = 0;   //length or duration in second
     int inputCounter = 0;
     int outputCounter = 0;
-    int testVar = 0;
+    int totalInput = 0;
     condition_variable m_condition;
     mutex m_mutex;
-    static bool inputBarrier;
 
 public:
-    void checkInputEvent();
+    virtual void checkInputEvent() = 0;
+
     void checkOutputEvent();
 
-    int getCondVariable() const;
+    long getCondVariable() const;
 
-    void setCondVariable(int condVariable);
+    void setCondVariable(long condVariable);
 
 
 };

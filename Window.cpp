@@ -5,10 +5,7 @@
 #include "Window.h"
 #include "StreamProcessor.h"
 
-bool Window::inputBarrier = true;
-
-
-
+/*
 void Window::checkInputEvent() {
     unique_lock<mutex> m_lock(m_mutex);
     while(this->inputCounter >= this->condVariable){
@@ -18,17 +15,20 @@ void Window::checkInputEvent() {
     this->inputCounter++;
 
     //implemented for time window
-   /* if(inputCounter == condVariable){
+   */
+/* if(inputCounter == condVariable){
         testVar = inputCounter;
-    }*/
+    }*//*
+
     m_lock.unlock();
 }
+*/
 
-int Window::getCondVariable() const {
+long Window::getCondVariable() const {
     return condVariable;
 }
 
-void Window::setCondVariable(int condVariable) {
+void Window::setCondVariable(long condVariable) {
     this->condVariable = condVariable;
 }
 
@@ -36,8 +36,8 @@ void Window::setCondVariable(int condVariable) {
 void Window::checkOutputEvent() {
     unique_lock<mutex> m_lock_out(m_mutex);
     this->outputCounter++;
-    if(this->outputCounter == this->condVariable){
-        StreamProcessor::outputEmitter->emitData();
+    if(this->outputCounter == this->totalInput){
+        OutputEmitter::emitData();
         StreamProcessor::processor->reset();
         this->inputCounter = 0;
         this->outputCounter = 0;
