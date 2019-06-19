@@ -6,6 +6,10 @@
 #include <iostream>
 #include <sys/time.h>
 #include <chrono>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+
 
 using namespace std;
 
@@ -21,5 +25,8 @@ inline long getCurrentTimeinMilli(){
    gettimeofday(&tp, NULL);
    return tp.tv_sec * 1000L + tp.tv_usec / 1000;
 }
+
+
+
 
 #endif //STREAM_PROCESSOR_COMMON_H

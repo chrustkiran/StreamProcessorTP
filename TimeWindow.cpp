@@ -15,13 +15,12 @@ void TimeWindow::checkInputEvent() {
     long intervalofEvent = getCurrentTimeinMilli() - initialTime;
 
 
-
-    while((intervalofEvent >= this->condVariable * 1000) and this->lastThreadGone){
+    while((intervalofEvent >= this->condVariable*1000 ) and this->lastThreadGone){
         m_condition.wait(m_lock);
     }
 
     this->inputCounter++;
-    if((intervalofEvent) >= condVariable*1000){
+    if((intervalofEvent) >= condVariable*1000 ){
         totalInput = inputCounter;
         lastThreadGone = true;
     }
