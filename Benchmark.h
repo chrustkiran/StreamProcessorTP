@@ -14,12 +14,14 @@ class Benchmark {
 
 public:
     static chrono::_V2::high_resolution_clock::time_point veryFirstTime;
-    static chrono::_V2::high_resolution_clock::time_point endTime;
+    static chrono::_V2::high_resolution_clock::time_point emitEndTime;
+    static chrono::_V2::high_resolution_clock::time_point emitPreviousTime;
     static void calcTotalTime(chrono::_V2::high_resolution_clock::time_point currTime , Data data);
     static mutex m_mutex;
     static void calcLatency(long nanoGap);
     static long avgNanoGap;
     static long count;
+    static long emitGap;
 
     static long getAvgNanoGap();
 };

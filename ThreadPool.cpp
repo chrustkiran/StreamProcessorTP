@@ -10,12 +10,15 @@
 
 void ThreadPool::processEvent() {
     while(true){ // it should be a flag but definitely should not check for buffer is empty or not!!!!
-        StreamProcessor::processor->process(StreamProcessor::buffer->pop());
+        Data data = StreamProcessor::buffer->pop();
+        data.setIijTime(getCurrentTime());
+        StreamProcessor::processor->process(data);
     }
 }
 
 void ThreadPool::inputFeed() {
     Benchmark::veryFirstTime = getCurrentTime();
+    Benchmark::emitPreviousTime = Benchmark::veryFirstTime;
     InputHandler::feedData(StreamProcessor::buffer);
 }
 
