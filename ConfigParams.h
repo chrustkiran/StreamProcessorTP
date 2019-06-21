@@ -1,0 +1,14 @@
+//
+// Created by tharsanan on 6/21/19.
+//
+
+#ifndef STREAMPROCESSORLLVM_TP_CONFIGPARAMS_H
+#define STREAMPROCESSORLLVM_TP_CONFIGPARAMS_H
+
+
+class ConfigParams {
+
+};
+
+
+#endif //STREAMPROCESSORLLVM_TP_CONFIGPARAMS_H
