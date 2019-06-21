@@ -7,7 +7,15 @@
 
 
 class ConfigParams {
+private:
+    static int maxBufferSize;
+    static int poolSize;
 
+public:
+    static void setMaxBufferSize(int value);
+    static void setPoolSize(int val);
+    static int getMaxBufferSize();
+    static int getPoolSize();
 };
 
 

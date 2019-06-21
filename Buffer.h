@@ -45,6 +45,8 @@ public:
 #include <zconf.h>
 #include "iostream"
 #include "chrono"
+#include "ConfigParams.h"
+
 using namespace std;
 
 template <class T>
@@ -105,7 +107,7 @@ T Buffer<T>::pop(){
 template <class T>
 void Buffer<T>::push(T const& value){
     unique_lock<mutex> locker(mutexForPopPushLock);
-    while(bufferQueue->size() >= 1000){
+    while(bufferQueue->size() >= ConfigParams::getMaxBufferSize()){
         m_condVar.wait_for(locker,chrono::nanoseconds(8));
     }
     bufferQueue->push(value);

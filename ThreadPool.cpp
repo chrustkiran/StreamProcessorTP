@@ -16,9 +16,6 @@ void ThreadPool::processEvent() {
 }
 
 void ThreadPool::inputFeed() {
-    /*Benchmark::veryFirstTime = getCurrentTime();
-    Benchmark::emitPreviousTime = Benchmark::veryFirstTime;*/
-
     InputHandler::feedData(StreamProcessor::buffer);
 }
 
