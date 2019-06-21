@@ -1,4 +1,4 @@
 .idea
 llvm
 llvm_O3
-cmake-build-debug/
+cmake-build-debug
