@@ -1,4 +1,5 @@
 .idea
 llvm
 llvm_O3
+a.out
 cmake-build-debug
