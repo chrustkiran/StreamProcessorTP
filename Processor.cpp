@@ -8,11 +8,12 @@
 
 void Processor::process(Data event) {
     sum.calculateSum(event.getWeight());
+    this->iijTime = event.getIijTime();
 }
 
 Data Processor::getOutputs() {
     Data data;
-    data.setIijTime(getCurrentTime());
+    data.setIijTime(this->iijTime);
     data.setWeight(sum.getOutput());
     return data;
 }

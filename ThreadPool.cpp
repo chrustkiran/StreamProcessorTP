@@ -11,7 +11,9 @@
 void ThreadPool::processEvent() {
     while(true) {
         StreamProcessor::window->checkInputEvent();
-        StreamProcessor::processor->process(StreamProcessor::buffer->pop());
+        Data data = StreamProcessor::buffer->pop();
+        data.setIijTime(getCurrentTime());
+        StreamProcessor::processor->process(data);
         StreamProcessor::window->checkOutputEvent();
     }
 }

@@ -12,6 +12,7 @@
 class Processor {
 private:
     Sum sum;
+    chrono::_V2::high_resolution_clock::time_point iijTime;
 public:
     void process(Data event);
     Data getOutputs();

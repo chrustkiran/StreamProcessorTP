@@ -12,5 +12,5 @@ llvm-link *.bc -o final.bc
 llc final.bc 	#convert bytecode into assembly
 llvm-dis final.bc	#convert into llvm-ir
 clang++ -pthread final.s
-./a.out
+./a.out 1000 5
 
