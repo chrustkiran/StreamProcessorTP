@@ -13,7 +13,7 @@ Buffer<Data> *StreamProcessor::buffer = NULL;
 void StreamProcessor::initialize(int T_NUM) {
      StreamProcessor::buffer = new Buffer<Data>();
      StreamProcessor::processor = new Processor();
-     StreamProcessor::window = new TimeWindow;
-     window->setCondVariable(0);
+     StreamProcessor::window = new LengthWindow;
+     window->setCondVariable(1);
     this->threadPool->initializeThreads(T_NUM);
 }

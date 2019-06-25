@@ -14,7 +14,7 @@ private:
     Sum sum;
 public:
     void process(Data event);
-    int getOutputs();
+    Data getOutputs();
     void reset();
     Processor();
 };

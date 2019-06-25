@@ -4,8 +4,9 @@
 
 #include "OutputEmitter.h"
 #include "StreamProcessor.h"
+#include "Benchmark.h"
 #include <iostream>
 
 void OutputEmitter::emitData() {
-   cout << StreamProcessor::processor->getOutputs() << endl;
+   Benchmark::calcLatency((std::chrono::high_resolution_clock::now() - StreamProcessor::processor->getOutputs().getIijTime()).count());
 }

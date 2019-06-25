@@ -123,6 +123,33 @@ StreamProcessorLLVM_TP/fast:
 	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/build
 .PHONY : StreamProcessorLLVM_TP/fast
 
+Benchmark.o: Benchmark.cpp.o
+
+.PHONY : Benchmark.o
+
+# target to build an object file
+Benchmark.cpp.o:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o
+.PHONY : Benchmark.cpp.o
+
+Benchmark.i: Benchmark.cpp.i
+
+.PHONY : Benchmark.i
+
+# target to preprocess a source file
+Benchmark.cpp.i:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.i
+.PHONY : Benchmark.cpp.i
+
+Benchmark.s: Benchmark.cpp.s
+
+.PHONY : Benchmark.s
+
+# target to generate assembly for a file
+Benchmark.cpp.s:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.s
+.PHONY : Benchmark.cpp.s
+
 Buffer.o: Buffer.cpp.o
 
 .PHONY : Buffer.o
@@ -149,6 +176,33 @@ Buffer.s: Buffer.cpp.s
 Buffer.cpp.s:
 	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/Buffer.cpp.s
 .PHONY : Buffer.cpp.s
+
+ConfigParams.o: ConfigParams.cpp.o
+
+.PHONY : ConfigParams.o
+
+# target to build an object file
+ConfigParams.cpp.o:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.o
+.PHONY : ConfigParams.cpp.o
+
+ConfigParams.i: ConfigParams.cpp.i
+
+.PHONY : ConfigParams.i
+
+# target to preprocess a source file
+ConfigParams.cpp.i:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.i
+.PHONY : ConfigParams.cpp.i
+
+ConfigParams.s: ConfigParams.cpp.s
+
+.PHONY : ConfigParams.s
+
+# target to generate assembly for a file
+ConfigParams.cpp.s:
+	$(MAKE) -f CMakeFiles/StreamProcessorLLVM_TP.dir/build.make CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.s
+.PHONY : ConfigParams.cpp.s
 
 Data.o: Data.cpp.o
 
@@ -456,9 +510,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... StreamProcessorLLVM_TP"
 	@echo "... edit_cache"
+	@echo "... Benchmark.o"
+	@echo "... Benchmark.i"
+	@echo "... Benchmark.s"
 	@echo "... Buffer.o"
 	@echo "... Buffer.i"
 	@echo "... Buffer.s"
+	@echo "... ConfigParams.o"
+	@echo "... ConfigParams.i"
+	@echo "... ConfigParams.s"
 	@echo "... Data.o"
 	@echo "... Data.i"
 	@echo "... Data.s"

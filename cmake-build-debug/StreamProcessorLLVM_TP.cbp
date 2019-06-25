@@ -84,10 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Benchmark.cpp">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Benchmark.h">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.cpp">
 			<Option target="StreamProcessorLLVM_TP"/>
 		</Unit>
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Buffer.h">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ConfigParams.cpp">
+			<Option target="StreamProcessorLLVM_TP"/>
+		</Unit>
+		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ConfigParams.h">
 			<Option target="StreamProcessorLLVM_TP"/>
 		</Unit>
 		<Unit filename="/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Data.cpp">

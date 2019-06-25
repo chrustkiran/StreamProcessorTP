@@ -7,7 +7,7 @@ int main(int argc, const char *args[]) {
         ConfigParams::setPoolSize(atoi(args[2]));
     }
     StreamProcessor streamProcessor;
-    cout << ConfigParams::getPoolSize() << "\n";
+   // cout << ConfigParams::getPoolSize() << "\n";
     streamProcessor.initialize(ConfigParams::getPoolSize());
     return 0;
 }

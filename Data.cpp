@@ -12,10 +12,10 @@ void Data::setWeight(int weight) {
     Data::weight = weight;
 }
 
-int Data::getTemperature() const {
-    return temperature;
+const std::chrono::_V2::high_resolution_clock::time_point &Data::getIijTime() const {
+    return iijTime;
 }
 
-void Data::setTemperature(int temperature) {
-    Data::temperature = temperature;
+void Data::setIijTime(const std::chrono::_V2::high_resolution_clock::time_point &iijTime) {
+    Data::iijTime = iijTime;
 }

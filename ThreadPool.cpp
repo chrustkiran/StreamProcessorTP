@@ -6,6 +6,7 @@
 #include "StreamProcessor.h"
 #include "TimeWindow.h"
 #include "common.h"
+#include "Benchmark.h"
 
 void ThreadPool::processEvent() {
     while(true) {
@@ -16,6 +17,9 @@ void ThreadPool::processEvent() {
 }
 
 void ThreadPool::inputFeed() {
+    Benchmark::prepareFile();
+    Benchmark::veryFirstTime = getCurrentTime();
+    Benchmark::emitPreviousTime = Benchmark::veryFirstTime;
     InputHandler::feedData(StreamProcessor::buffer);
 }
 

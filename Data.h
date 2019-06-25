@@ -1,10 +1,11 @@
 //
 // Created by chrustkiran on 6/12/19.
 //
-
 #ifndef STREAMPROCESSORLLVM_TP_DATA_H
 #define STREAMPROCESSORLLVM_TP_DATA_H
 
+#include <iostream>
+#include <chrono>
 
 class Data {
 public:
@@ -12,13 +13,14 @@ public:
 
     void setWeight(int weight);
 
-    int getTemperature() const;
+    const std::chrono::_V2::high_resolution_clock::time_point &getIijTime() const;
 
-    void setTemperature(int temperature);
+    void setIijTime(const std::chrono::_V2::high_resolution_clock::time_point &iijTime);
+
 
 private:
     int weight;
-    int temperature;
+    std::chrono::_V2::high_resolution_clock::time_point iijTime;
 
 };
 

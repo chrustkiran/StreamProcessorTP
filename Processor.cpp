@@ -3,14 +3,18 @@
 //
 
 #include "Processor.h"
+#include "common.h"
 #include <iostream>
 
 void Processor::process(Data event) {
     sum.calculateSum(event.getWeight());
 }
 
-int Processor::getOutputs() {
-    return sum.getOutput();
+Data Processor::getOutputs() {
+    Data data;
+    data.setIijTime(getCurrentTime());
+    data.setWeight(sum.getOutput());
+    return data;
 }
 
 void Processor::reset() {

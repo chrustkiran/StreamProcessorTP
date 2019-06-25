@@ -213,6 +213,32 @@ CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/TimeWindow.cpp -o CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.s
 
+CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.o: CMakeFiles/StreamProcessorLLVM_TP.dir/flags.make
+CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.o: ../ConfigParams.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.o -c /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ConfigParams.cpp
+
+CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ConfigParams.cpp > CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.i
+
+CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/ConfigParams.cpp -o CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.s
+
+CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o: CMakeFiles/StreamProcessorLLVM_TP.dir/flags.make
+CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o: ../Benchmark.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o -c /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Benchmark.cpp
+
+CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Benchmark.cpp > CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.i
+
+CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/Benchmark.cpp -o CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.s
+
 # Object files for target StreamProcessorLLVM_TP
 StreamProcessorLLVM_TP_OBJECTS = \
 "CMakeFiles/StreamProcessorLLVM_TP.dir/main.cpp.o" \
@@ -226,7 +252,9 @@ StreamProcessorLLVM_TP_OBJECTS = \
 "CMakeFiles/StreamProcessorLLVM_TP.dir/functions/Sum.cpp.o" \
 "CMakeFiles/StreamProcessorLLVM_TP.dir/OutputEmitter.cpp.o" \
 "CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o" \
-"CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o"
+"CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o" \
+"CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.o" \
+"CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o"
 
 # External object files for target StreamProcessorLLVM_TP
 StreamProcessorLLVM_TP_EXTERNAL_OBJECTS =
@@ -243,9 +271,11 @@ StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/functions/Sum.cpp.
 StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/OutputEmitter.cpp.o
 StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/LengthWindow.cpp.o
 StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/TimeWindow.cpp.o
+StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/ConfigParams.cpp.o
+StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/Benchmark.cpp.o
 StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/build.make
 StreamProcessorLLVM_TP: CMakeFiles/StreamProcessorLLVM_TP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable StreamProcessorLLVM_TP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/chrustkiran/CLionProjects/StreamProcessorLLVM_TP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable StreamProcessorLLVM_TP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StreamProcessorLLVM_TP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
